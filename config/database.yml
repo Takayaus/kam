@@ -81,5 +81,6 @@ test:
 production:
   <<: *default
   database: kam_production
-  username: kam
-  password: <%= ENV['KAM_DATABASE_PASSWORD'] %>
+  username: postgres
+  password: <%= Rails.application.credentials.db[:password] %>
+  host: <%= Rails.application.credentials.db[:hostname] %>
