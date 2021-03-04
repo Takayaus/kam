@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'shops/index'
+  get 'shops/show'
   root to: 'posts#index'
   resources :posts
   
