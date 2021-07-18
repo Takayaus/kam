@@ -1,8 +1,11 @@
-server "3.114.168.89", user: "taka", roles: %w{app db web}
-server "35.73.109.156", user: "taka", roles: %w{app db web}
+server "35.72.198.201	", user: "taka", roles: %w{app db web}
+# server "35.73.109.156", user: "taka", roles: %w{app db web}
+set :rails_env, "production"
+set :stage, :production
+append :linked_files, "config/credentials/production.key"
 
 set :ssh_options, {
-  keys: %w(~/.ssh/kam1.pem),
+  keys: %w(~/.ssh/kam4.pem),
   forward_agent: true,
   auth_methods: %w(publickey),
 }
