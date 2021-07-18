@@ -82,8 +82,8 @@ production:
   <<: *default
   database: kam_production
   username: postgres
-  password: <%= Rails.application.credentials.db[:password] %>
-  host: <%= Rails.application.credentials.db[:hostname] %>
+  password: kamkam99
+  host: kam-db.cu4vvfupzcem.ap-northeast-1.rds.amazonaws.com
 
 
 staging:
