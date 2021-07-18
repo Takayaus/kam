@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.15.0"
+lock "~> 3.16.0"
 
 # ***** 以下を修正 *****
 set :application, "kam"
